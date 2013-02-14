@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Team Todo List</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+  </head>
+  <body>
+    <!-- Code starts here -->
+    <div class="container">
+    	<h1>Team Task List</h1>
+    
+		<table class="table table-striped">
+			<thead>
+				<tr>
+					<th>Task</th>
+					<th>Created by</th>
+					<th>Who's doing it?</th>
+					<th>Action</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Sample task</td>
+					<td>User1</td>
+					<td>User2</td>
+					<td><button class="btn">Edit</button> <button class="btn">Delete</button></td>
+				</tr>
+			</tbody>
+		</table>
+    	
+    	<form class="form-horizontal">
+	    	<fieldset>
+		    	<legend>Task Editor</legend>
+		    	<div class="control-group">
+					<label class="control-label" for="created">Your Name</label>
+					<div class="controls">
+					  <input type="text" id="created" placeholder="Your name">
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label" for="taskname">Task</label>
+					<div class="controls">
+					  <input type="text" id="taskname" placeholder="Task name">
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label" for="owned">Who's doing it</label>
+					<div class="controls">
+					  <input type="text" id="owned" placeholder="Someone else's name">
+					</div>
+				</div>
+				<div class="control-group">
+					<div class="controls">
+					  <button type="submit" class="btn">Add New</button>
+					  <button type="submit" class="btn">Save</button>
+					</div>
+				</div>
+	    	</fieldset>
+		</form>
+  	</div>
+  	<!-- Code ends here -->
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
